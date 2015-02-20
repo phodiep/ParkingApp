@@ -21,6 +21,9 @@
 		1D134F591A96D4E7005510B0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D134F581A96D4E7005510B0 /* MapViewController.m */; };
 		1D134F5C1A96D501005510B0 /* PicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D134F5B1A96D501005510B0 /* PicturesViewController.m */; };
 		1D134F5F1A96D699005510B0 /* Park.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D134F5E1A96D699005510B0 /* Park.m */; };
+		1D5526DB1A96DA30001814EB /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5526DA1A96DA30001814EB /* HistoryCell.m */; };
+		1D5526DE1A96E0A4001814EB /* ParkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5526DD1A96E0A4001814EB /* ParkingService.m */; };
+		1D5526E11A96E0BE001814EB /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5526E01A96E0BE001814EB /* CoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		1D134F5B1A96D501005510B0 /* PicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicturesViewController.m; sourceTree = "<group>"; };
 		1D134F5D1A96D699005510B0 /* Park.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Park.h; sourceTree = "<group>"; };
 		1D134F5E1A96D699005510B0 /* Park.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Park.m; sourceTree = "<group>"; };
+		1D5526D91A96DA30001814EB /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
+		1D5526DA1A96DA30001814EB /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
+		1D5526DC1A96E0A4001814EB /* ParkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingService.h; sourceTree = "<group>"; };
+		1D5526DD1A96E0A4001814EB /* ParkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingService.m; sourceTree = "<group>"; };
+		1D5526DF1A96E0BE001814EB /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		1D5526E01A96E0BE001814EB /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +154,10 @@
 			children = (
 				1D134F5D1A96D699005510B0 /* Park.h */,
 				1D134F5E1A96D699005510B0 /* Park.m */,
+				1D5526DC1A96E0A4001814EB /* ParkingService.h */,
+				1D5526DD1A96E0A4001814EB /* ParkingService.m */,
+				1D5526DF1A96E0BE001814EB /* CoreDataStack.h */,
+				1D5526E01A96E0BE001814EB /* CoreDataStack.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -153,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				1D134F2D1A96D3BE005510B0 /* Main.storyboard */,
+				1D5526D91A96DA30001814EB /* HistoryCell.h */,
+				1D5526DA1A96DA30001814EB /* HistoryCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -277,6 +292,7 @@
 			files = (
 				1D134F261A96D3BE005510B0 /* AppDelegate.m in Sources */,
 				1D134F291A96D3BE005510B0 /* WheresMyCar.xcdatamodeld in Sources */,
+				1D5526DB1A96DA30001814EB /* HistoryCell.m in Sources */,
 				1D134F5F1A96D699005510B0 /* Park.m in Sources */,
 				1D134F561A96D4D9005510B0 /* ParkViewController.m in Sources */,
 				1D134F591A96D4E7005510B0 /* MapViewController.m in Sources */,
@@ -284,6 +300,8 @@
 				1D134F5C1A96D501005510B0 /* PicturesViewController.m in Sources */,
 				1D134F231A96D3BE005510B0 /* main.m in Sources */,
 				1D134F531A96D4C7005510B0 /* EditParkingViewController.m in Sources */,
+				1D5526DE1A96E0A4001814EB /* ParkingService.m in Sources */,
+				1D5526E11A96E0BE001814EB /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +494,7 @@
 				1D134F451A96D3BE005510B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D134F461A96D3BE005510B0 /* Build configuration list for PBXNativeTarget "WheresMyCarTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +503,7 @@
 				1D134F481A96D3BE005510B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

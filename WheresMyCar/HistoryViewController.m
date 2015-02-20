@@ -7,8 +7,13 @@
 //
 
 #import "HistoryViewController.h"
+#import "Park.h"
+#import "HistoryCell.h"
 
-@interface HistoryViewController ()
+@interface HistoryViewController () <UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *parking;
 
 @end
 
@@ -16,22 +21,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    HistoryCell *cell = (HistoryCell*)[self.tableView dequeueReusableCellWithIdentifier:@"HISTORY_CELL" forIndexPath:indexPath];
+    
+    Park *park = self.parking[indexPath.row];
+    
+    cell.image.image = [UIImage imageWithData:park.picture1];
+    cell.detailsText.text = park.notes;
+    
+//    cell.timestampLabel.text = park.timestamp;
+    
+    return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.parking count];
 }
-*/
+
 
 @end
